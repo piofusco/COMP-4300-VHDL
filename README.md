@@ -33,21 +33,35 @@ MIPS Controller This is a 5-state machine that handles the clock inputs to all t
 Opcodes and function codes Here are the opcodes and function codes you will need to run MIPS instructions. Ignore the 5-bit "shamt" filed in instructions. All the function codes we will use fit in the 6-bit "funct" field (Textbook figure 2.27). These are the ONLY operations I want you to spend time on, until you get these all running. If you do get them all, and want some more, come and see me for extra credit.
 
 ADD   opcode = 0x0, function = 0x20, alu_oper = 0x0, signed = 1 
- ADDU  opcode = 0x0, function =0x21,  alu_oper = 0x0, signed = 0 
- ADDI  opcode = 0x8,                  alu_oper = 0x0, signed = 1
- ADDUI opcode = 0x9                   alu_oper = 0x0, signed = 0
- SUB   opcode = 0x0, function = 0x22  alu_oper = 0x1, signed = 1
- SUBI  opcode = 0xa                   alu_oper = 0x1, signed = 1
- SUBU  opcode = 0x0, function = 0x23  alu_oper = 0x1, signed = 0
- MUL  opcode = 0x0, function = 0xe    alu_oper = 0xe, signed = 1
- MULU opcode = 0x0, function = 0x16   alu_oper = 0xe, signed = 0
- AND   opcode = 0x0, function = 0x24  alu_oper = 0x2
- ANDI  opcode = 0xc                   alu_oper = 0x2
- OR    opcode = 0x0, function = 0x25  alu_oper = 0x3
- SLT   opcode = 0x0, function = 0x2a  alu_oper = 0xb, signed = 1
- SLTU  opcode = 0x0, function = 0x2b  alu_oper = 0x??, signed = 0 
  
- LW    opcode = 0x23
- SW    opcode = 0x2b
+ADDU  opcode = 0x0, function =0x21,  alu_oper = 0x0, signed = 0 
+
+ADDI  opcode = 0x8,                  alu_oper = 0x0, signed = 1
+
+ADDUI opcode = 0x9                   alu_oper = 0x0, signed = 0
+
+SUB   opcode = 0x0, function = 0x22  alu_oper = 0x1, signed = 1
+
+SUBI  opcode = 0xa                   alu_oper = 0x1, signed = 1
+
+SUBU  opcode = 0x0, function = 0x23  alu_oper = 0x1, signed = 0
+
+MUL  opcode = 0x0, function = 0xe    alu_oper = 0xe, signed = 1
+
+MULU opcode = 0x0, function = 0x16   alu_oper = 0xe, signed = 0
+
+AND   opcode = 0x0, function = 0x24  alu_oper = 0x2
+
+ANDI  opcode = 0xc                   alu_oper = 0x2
+
+OR    opcode = 0x0, function = 0x25  alu_oper = 0x3
+
+SLT   opcode = 0x0, function = 0x2a  alu_oper = 0xb, signed = 1
+
+SLTU  opcode = 0x0, function = 0x2b  alu_oper = 0x??, signed = 0 
+
+LW    opcode = 0x23
+
+SW    opcode = 0x2b
 
 ModelSIM is needed to run any of these files. Included are screen shots of all of the instructions being tested and their results.
